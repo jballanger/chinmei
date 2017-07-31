@@ -1,0 +1,31 @@
+{
+  "name": "chinmei",
+  "version": "0.0.1",
+  "description": "Node.js wrapper for MyAnimeList API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jballanger/chinmei.git"
+  },
+  "keywords": [
+    "node.js",
+    "myanimelist",
+    "api",
+    "wrapper"
+  ],
+  "author": "jballanger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jballanger/chinmei/issues"
+  },
+  "homepage": "https://github.com/jballanger/chinmei#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "eventemitter3": "^2.0.3",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.17"
+  }
+}
