@@ -175,9 +175,9 @@ Even you pass a variable with a wrong type (eg: `episode` as `'0'` instead of `0
 | date_start | date | When you started reading this manga | Date format doesn't matter, but should at least contain **Year**, **Month** and **Day** |
 | date_finish | date | When you finished this manga | Date format doesn't matter, but should at least contain **Year**, **Month** and **Day** |
 | priority | int | Your priority level to read this manga | 0 = Low, 1 = Medium, 2 = High |
-| enable_discussion | int | ? | |
+| enable_discussion | int | ? | 0 = No, 1 = Yes |
 | enable_rereading | int | If you are currently rereading this manga | 0 = No, 1 = Yes |
 | comments | string | Comments about this manga | |
-| scan_group | string | ? | 0 = No, 1 = Yes |
+| scan_group | string | ? | |
 | tags | string | Tags about this manga | You should separate your tags with commas |
 | retail_volumes | int | How many retail volumes of this manga you have | |
