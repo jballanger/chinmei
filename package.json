@@ -1,6 +1,6 @@
 {
   "name": "chinmei",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Node.js wrapper for MyAnimeList API",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "wrapper"
   ],
   "author": "jballanger",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jballanger/chinmei/issues"
   },
