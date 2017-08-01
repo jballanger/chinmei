@@ -25,7 +25,9 @@ The strong point of Chinmei is the providing of a more accurate search with `sea
 
 ## Install
 
-Coming soon..
+```
+npm install chinmei
+```
 
 ## Usage
 
