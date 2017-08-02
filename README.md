@@ -37,7 +37,7 @@ const Chinmei = require('chinmei');
 var myChinmei = new Chinmei(username, password);
 ```
 
-More examples will be soon available on the repository.
+More examples are available in `examples/`.
 
 ## Methods
 
