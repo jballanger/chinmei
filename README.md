@@ -148,6 +148,7 @@ Even you pass a variable with a wrong type (eg: `episode` as `'0'` instead of `0
 
 | Parameter | Type | Description | Notes |
 | --------- | ---- | ----------- | ----- |
+| id | int | id of the anime | |
 | episode | int | Number of episode viewed | |
 | status | int    string | Status of the anime | 1/watching, 2/completed, 3/onhold, 4/dropped, 6/plantowatch |
 | score | int | Score of the anime | Minimum is 1, maximum is 10 |
@@ -168,6 +169,7 @@ Even you pass a variable with a wrong type (eg: `episode` as `'0'` instead of `0
 
 | Parameter | Type | Description | Notes |
 | --------- | ---- | ----------- | ----- |
+| id | int | id of the manga | |
 | chapter | int | Number of chapter read | |
 | volume | int | Number of volume read | |
 | status | int    string | Status of the manga | 1/reading, 2/completed, 3/onhold, 4/dropped, 6/plantoread |
