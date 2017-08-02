@@ -1,5 +1,4 @@
 const Chinmei = require('chinmei');
-
 var myChinmei = new Chinmei('baduname', 'badpassw');
 /* Error: Failed to login on MyAnimeList (401) */
 

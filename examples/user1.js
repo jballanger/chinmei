@@ -1,5 +1,4 @@
 const Chinmei = require('chinmei');
-
 var myChinmei = new Chinmei('uname', 'passw');
 
 myChinmei.getUser().then((user) => {
