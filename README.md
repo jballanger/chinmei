@@ -1,4 +1,4 @@
-# chinmei [![npm version](https://badge.fury.io/js/chinmei.svg)](https://badge.fury.io/js/chinmei)
+# chinmei [![npm version](https://badge.fury.io/js/chinmei.svg)](https://badge.fury.io/js/chinmei) [![Travis CI Build Status](https://travis-ci.org/jballanger/chinmei.svg?branch=master)](https://travis-ci.org/jballanger/chinmei)
 Node.js wrapper for MyAnimeList API
 
 <p align="center">
