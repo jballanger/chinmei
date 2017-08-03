@@ -1,9 +1,9 @@
 const Chinmei = require('chinmei');
-var myChinmei = new Chinmei('uname', 'passw');
+var myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
 
 myChinmei.getUser().then((user) => {
 	console.log(`Hello ${user.username} ! (${user.id})`);
-	/* Hello uname ! (19283746) */
+	/* Hello _julien ! (6338595) */
 }).catch((e) => {
 	console.error(e);
 });

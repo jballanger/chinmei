@@ -1,5 +1,5 @@
 const Chinmei = require('chinmei');
-var myChinmei = new Chinmei('uname', 'passw');
+var myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
 
 myChinmei.searchSingleManga('aku no hana').then((manga) => {
 	console.log(`${manga.title} has ${manga.volumes} volumes and ${manga.chapters} chapters !`);
