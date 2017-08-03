@@ -1,4 +1,4 @@
-const Chinmei = require('chinmei');
+const Chinmei = require('../index.js');
 var myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
 
 myChinmei.getUser().then((user) => {
