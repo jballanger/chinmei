@@ -12,6 +12,14 @@ test('getUser', async t => {
 	});
 });
 
+test('getMalUser', async t => {
+	await myChinmei.getMalUser('_julien').then((user) => {
+		t.is(user.myinfo.user_name, '_julien');
+	}).catch((e) => {
+		t.fail(e);
+	});
+});
+
 test('searchSingleAnime', async t => {
 	await myChinmei.searchSingleAnime('kaiji u').then((anime) => {
 		t.is(anime.title, 'Gyakkyou Burai Kaiji: Ultimate Survivor');
