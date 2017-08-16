@@ -57,6 +57,16 @@ Check if the user is valid.
 
 returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
+#### `getMalUser()`
+Get informations about a MyAnimeList user.
+
+| Parameter | Type | Description | Notes |
+| --------- | ---- | ----------- | ----- |
+| name | string | Name of the user you are looking for | |
+| type | int | The type of information you want | 1 = Anime, 2 = Manga (Default to anime) |
+| status | string | Status of information you are looking for | ? (Default to 'all') |
+
+returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[MalUser](https://myanimelist.net/malappinfo.php?u=_julien&type=manga&status=all)>
 
 ### Search
 
