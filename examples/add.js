@@ -1,23 +1,27 @@
 const Chinmei = require('../index.js');
-var myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
 
-var anime = {
-	id: 777,
-	status: 4,
-	episode: 1,
-	date_start: new Date(2007,4,25),
-	comments: 'my super comments'
+const myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
+const anime = {
+  id: 777,
+  status: 4,
+  episode: 1,
+  date_start: new Date(2007,4,25),
+  comments: 'my super comments'
+};
+
+// Using async / await
+try {
+  const res = await myChinmei.addAnime(anime);
+  console.log(res);
+} catch (e) {
+  console.error(e);
 }
 
+// Using Promises
 myChinmei.addAnime(anime).then((res) => {
-	console.log(res.body);
-	/* Created */
-	/* or */
-	/* The anime (id: 777) is already in the list. */
+  console.log(res.body);
 }).catch((e) => {
-	console.error(e);
+  console.error(e);
 });
 
-myChinmei.on('error', (err) => {
-	console.error(err);
-});
+// res should be equal to 'Created'
