@@ -40,15 +40,16 @@ test('searchSingleManga', async (t) => {
 	}
 });
 
-/*test('searchAnimes', async (t) => {
-	await myChinmei.searchAnimes('gintama').then((animes) => {
-		t.true(animes.length > 1);
-	}).catch((e) => {
+test('searchAnimes', async (t) => {
+	try {
+		const animes = await myChinmei.searchAnimes('gintama');
+		t.true(animes.length > 9);
+	} catch (e) {
 		t.fail(e);
-	});
+	}
 });
 
-test('searchMangas', async (t) => {
+/*test('searchMangas', async (t) => {
 	await myChinmei.searchMangas('one piece').then((mangas) => {
 		t.true(mangas.length > 1);
 	}).catch((e) => {
