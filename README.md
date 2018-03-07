@@ -143,14 +143,14 @@ returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 
 #### Notes
-Even you pass a variable with a wrong type (eg: `episode` as `'0'` instead of `0`) it will not cause any problem since Chinmei convert each value in the right type before sending them to MyAnimeList ! 
+Even you pass a variable with a wrong type (eg: `episode` as `'0'` instead of `0`) it will not cause any problem since Chinmei convert each value in the right type before sending them to MyAnimeList !
 
 
 ### User model
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| id | int | Current user's id |
+| id | string | Current user's id |
 | username | string | Current user's username |
 
 
