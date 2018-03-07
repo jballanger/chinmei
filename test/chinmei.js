@@ -58,34 +58,38 @@ test('searchMangas', async (t) => {
 	}
 });
 
-/*test('addAnime', async (t) => {
-	await myChinmei.addAnime(exampleVar.animeAdd).then((res) => {
-		t.is(res.body, 'Created');
-	}).catch((e) => {
+test('addAnime', async (t) => {
+	try {
+		const anime = await myChinmei.addAnime(exampleVar.animeAdd);
+		t.is(anime, 'Created');
+	} catch (e) {
 		t.fail(e);
-	});
+	}
 });
 
 test('updateAnime', async (t) => {
-	await myChinmei.updateAnime(exampleVar.animeUpdate).then((res) => {
-		t.is(res.body, 'Updated');
-	}).catch((e) => {
+	try {
+		const anime = await myChinmei.updateAnime(exampleVar.animeUpdate);
+		t.is(anime, 'Updated');
+	} catch (e) {
 		t.fail(e);
-	});
+	}
 });
 
 test('addManga', async (t) => {
-	await myChinmei.addManga(exampleVar.mangaAdd).then((res) => {
-		t.is(res.body, 'Created');
-	}).catch((e) => {
+	try {
+		const manga = await myChinmei.addManga(exampleVar.mangaAdd);
+		t.is(manga, 'Created');
+	} catch (e) {
 		t.fail(e);
-	});
+	}
 });
 
 test('updateManga', async (t) => {
-	await myChinmei.updateManga(exampleVar.mangaUpdate).then((res) => {
-		t.is(res.body, 'Updated');
-	}).catch((e) => {
+	try {
+		const manga = await myChinmei.updateManga(exampleVar.mangaUpdate);
+		t.is(manga, 'Updated');
+	} catch (e) {
 		t.fail(e);
-	});
-});*/
+	}
+});
