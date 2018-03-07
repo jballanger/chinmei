@@ -31,15 +31,16 @@ test('searchSingleAnime', async (t) => {
 	}
 });
 
-/*test('searchSingleManga', async (t) => {
-	await myChinmei.searchSingleManga('blossom of evil').then((manga) => {
+test('searchSingleManga', async (t) => {
+	try {
+		const manga = await myChinmei.searchSingleManga('blossom of evil');
 		t.is(manga.title, 'Aku no Hana');
-	}).catch((e) => {
+	} catch (e) {
 		t.fail(e);
-	});
+	}
 });
 
-test('searchAnimes', async (t) => {
+/*test('searchAnimes', async (t) => {
 	await myChinmei.searchAnimes('gintama').then((animes) => {
 		t.true(animes.length > 1);
 	}).catch((e) => {
