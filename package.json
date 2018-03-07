@@ -1,6 +1,6 @@
 {
   "name": "chinmei",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "Node.js wrapper for MyAnimeList API",
   "main": "index.js",
   "scripts": {
@@ -23,12 +23,11 @@
   },
   "homepage": "https://github.com/jballanger/chinmei#readme",
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "eventemitter3": "^2.0.3",
-    "request": "^2.81.0",
-    "xml2js": "^0.4.17"
+    "bluebird": "^3.5.1",
+    "node-fetch": "^2.1.1",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "ava": "^0.21.0"
+    "ava": "^0.25.0"
   }
 }

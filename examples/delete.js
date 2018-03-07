@@ -1,13 +1,20 @@
 const Chinmei = require('../index.js');
-var myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
 
+const myChinmei = new Chinmei(process.env.MAL_USER, process.env.MAL_PASS);
+
+// Using async / await
+try {
+  const res = await myChinmei.deleteAnime(777);
+  console.log(res);
+} catch (e) {
+  console.error(e);
+}
+
+// Using Promises
 myChinmei.deleteAnime(777).then((res) => {
-	console.log(res.body);
-	/* Deleted */
+  console.log(res);
 }).catch((e) => {
-	console.error(e);
+  console.error(e);
 });
 
-myChinmei.on('error', (err) => {
-	console.error(err);
-});
+// res should be equal to 'Deleted'
