@@ -19,7 +19,7 @@ try {
 
 // Using Promises
 myChinmei.addAnime(anime).then((res) => {
-  console.log(res.body);
+  console.log(res);
 }).catch((e) => {
   console.error(e);
 });
