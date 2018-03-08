@@ -117,7 +117,7 @@ Add an anime/manga to the current user's anime/manga list.
 | anime | object | [Anime model](#anime-model) |
 | manga | object | [Manga model](#manga-model) |
 
-returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[http.ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse)>
+returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing response body
 
 #### `updateAnime(anime)` & `updateManga(manga)`
 Update an anime/manga of the current user's anime/manga list.
@@ -127,7 +127,7 @@ Update an anime/manga of the current user's anime/manga list.
 | anime | object | [Anime model](#anime-model) |
 | manga | object | [Manga model](#manga-model) |
 
-returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[http.ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse)>
+returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing response body
 
 #### `deleteAnime(id)` & `deleteManga(id)`
 Delete an anime/manga of the current user's anime/manga list.
@@ -136,7 +136,7 @@ Delete an anime/manga of the current user's anime/manga list.
 | --------- | ---- | ----------- |
 | id | int | Id of the anime / manga you want to delete |
 
-returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[http.ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse)>
+returns [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) containing response body
 
 
 ## Models
