@@ -24,7 +24,7 @@
   "homepage": "https://github.com/jballanger/chinmei#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "node-fetch": "^2.1.1",
+    "node-fetch": "^2.1.2",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
